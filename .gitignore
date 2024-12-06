@@ -1,0 +1,26 @@
+.DS_Store
+node_modules/
+packages/**/esm
+packages/**/umd
+packages/playground/dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.fleet
+packages/playground/src/utils/joinRoom.ts
+
+/coverage/
+/test-lib/
+
+packages/**/dist/
+.turbo
