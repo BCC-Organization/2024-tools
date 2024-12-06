@@ -121,7 +121,6 @@ class BCC {
         let imageSegmenter;
     
         async function createImageSegmenter() {
-            console.log('111111111111111111')
             const filesetResolver = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/wasm");
             imageSegmenter = await ImageSegmenter.createFromOptions(filesetResolver, {
                 baseOptions: {
@@ -132,7 +131,6 @@ class BCC {
                 outputCategoryMask: true,
                 outputConfidenceMasks: true
             });
-            console.log('22222222222222')
         }
     
         await createImageSegmenter();
